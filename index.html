@@ -31,11 +31,11 @@
 	<!-- Header and Navbar -->
 	<header class="header text-center">
 		<div class="force-overflow">
-			<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Swapnil Pakhare</a></h1>
+			<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Swapnil Pakhare<img src="" alt=""></a></h1>
 
 			<nav class="navbar navbar-expand-lg navbar-dark">
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
 					aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -45,7 +45,7 @@
 						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png"
 							alt="image">
 
-						<div class="bio mb-3">Hi, my name is Swapnil Pakhare and I'm a Full-Stack Application Developer.
+						<div class="bio mb-3">Hi, my name is Swapnil Pakhare and I'm a Full-Stack .NET Developer.
 							Welcome to my personal website!</div><!--//bio-->
 						<ul class="social-list list-inline py-2 mx-auto">
 							<li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
@@ -117,11 +117,9 @@
 					<div class="profile-teaser row">
 
 						<div class="col">
-							<h2 class="name font-weight-bold mb-1">Swapnil Pakhare</h2>
-							<div class="tagline mb-3">Junior Developer</div>
-							<div class="bio mb-4">I'm a software engineer specialised in frontend and backend
-								applications
-								development.
+							<h1 class="name font-weight-bold mb-1">About Me</h1>
+							<div class="tagline mb-3">.NET Developer</div>
+							<div class="bio mb-4">As an .NET Developer, I am passionate about creating innovative and scalable software solutions using the Microsoft technology stack. With a strong foundation in C#, ASP.NET Core, MVC, and Web API, I am actively developing my skills to build modern web and desktop applications. My goal is to leverage my expertise to contribute to impactful projects while continuously growing as a developer.
 								<!-- I write about software development on <a class="text-link" href="blog-home.html">my blog</a>. Want to know how I may help your project? Check out my project <a class="text-link" href="project.html">portfolio</a> and <a class="text-link" href="resume.html">online resume</a>.-->
 							</div><!--//bio-->
 							<div class="mb-4">
@@ -135,17 +133,16 @@
 							</div>
 						</div><!--//col-->
 
-						<div class="col-md-5 col-lg-5">
-							<img class="profile-image img-fluid mb-3 mb-lg-0 me-md-0" src="assets/images/profile-lg.jpg"
-								alt="">
-						</div>
+						<!-- <div class="col-md-5 col-lg-5">
+							<img class="profile-image img-fluid mb-3 mb-lg-0 me-md-0" src="assets/images/profile-lg.jpg" alt="" width="100%">
+						</div> -->
 					</div>
 				</div>
 			</section><!--//about-me-section-->
 
 			<section class="overview-section p-3 p-lg-5">
 				<div class="container">
-					<h2 class="section-title font-weight-bold mb-3">More about me</h2>
+					<h2 class="section-title font-weight-bold mb-3">My Skills</h2>
 					<div class="section-intro mb-5">I'm Btech IT Graduate'24 from Shivaji University Kolhapur, having 11
 						months experience in developing web application. I am skilled
 						in both frontend and backend.</div>
@@ -948,6 +945,56 @@
 		</footer>
 
 	</div>
+
+	<!-- Back to Top button -->
+<a href="#" id="back-to-top" class="back-to-top"><img src="assets/icons/topnavigator.png" alt="" width="20"></i></a>
+<style>
+	#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: white;
+}
+</style>
+<script>
+    // Get the button
+    const backToTopButton = document.getElementById("back-to-top");
+
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTopButton.style.opacity = "1";  // Show the button
+        } else {
+            backToTopButton.style.opacity = "0";  // Hide the button
+        }
+    };
+
+    // When the user clicks the button, scroll to the top of the page
+    backToTopButton.addEventListener("click", function (e) {
+        e.preventDefault();  // Prevent the default anchor link behavior
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"  // Smooth scrolling to the top
+        });
+    });
+</script>
+
+
 
 	<!-- Javascript -->
 	<script src="assets/plugins/popper.min.js"></script>
