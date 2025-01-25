@@ -64,6 +64,21 @@ section .card {
   }
 }
 
+/* NAVBAR TOGGLER */
+.navbar-toggler {
+  border: none !important; /* Removes the default border */
+  outline: none !important; /* Removes the focus outline */
+  box-shadow: none !important; /* Ensures no shadow effect */
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: none !important; /* Ensures no border on hover, focus, or active */
+  outline: none !important; /* Ensures no outline on hover, focus, or active */
+  box-shadow: none !important; /* Ensures no shadow on hover, focus, or active */
+}
+
 /* HERO */
 
 section.hero {
@@ -142,6 +157,67 @@ section.contact .social-media a {
   font-size: 1.3rem;
 }
 
-section.contact #contact-email,#contact-phone, #contact-links{
+section.contact #contact-email,
+#contact-phone,
+#contact-links {
   background-color: ecf2ff;
+}
+
+/* Certificates Section */
+.certificates-container {
+  max-height: 900px;
+  overflow-y: auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.certificate-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.certificate-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-item h5 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Navbar name and image */
+/* Navbar Profile Link Styling */
+.profile-link {
+  font-family: "Poppins", sans-serif; /* Or 'Roboto', 'Montserrat', etc. */
+  font-size: 16px; /* Adjust size for better readability */
+  font-weight: 500;
+  color: #333; /* Neutral color for the navbar */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.profile-link img {
+  margin-right: 8px;
+  border: 2px solid #ccc; /* Optional border for profile picture */
+  transition: border-color 0.3s ease;
+}
+
+.profile-link:hover {
+  color: #006994; /* Matches vibrant theme or your site’s accent color */
+}
+
+.profile-link img:hover {
+  border-color: #006994; /* Subtle hover effect */
 }
